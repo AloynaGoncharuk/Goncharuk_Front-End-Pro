@@ -3,7 +3,7 @@ const users = [
     {
         index: 0,
         isActive: true,
-        balance: 2226.60,
+        balance: '2226.60',
         name: 'Eugenia Sawyer',
         gender: 'female',
         phone: '+1 (840) 583-3207',
@@ -12,7 +12,7 @@ const users = [
     {
         index: 1,
         isActive: true,
-        balance: 2613.77,
+        balance: '2613.77',
         name: 'Pauline Gallegos',
         gender: 'female',
         phone: '+1 (985) 593-3328',
@@ -21,7 +21,7 @@ const users = [
     {
         index: 2,
         isActive: false,
-        balance: 3976.41,
+        balance: '3976.41',
         name: 'Middleton Chaney',
         gender: 'male',
         phone: '+1 (995) 591-2478',
@@ -30,7 +30,7 @@ const users = [
     {
         index: 3,
         isActive: true,
-        balance: 1934.58,
+        balance: '1934.58',
         name: 'Burns Poole',
         gender: 'male',
         phone: '+1 (885) 559-3422',
@@ -39,7 +39,7 @@ const users = [
     {
         index: 4,
         isActive: true,
-        balance: 3261.65,
+        balance: '3261.65',
         name: 'Mcfadden Horne',
         gender: 'male',
         phone: '+1 (942) 565-3988',
@@ -48,7 +48,7 @@ const users = [
     {
         index: 5,
         isActive: false,
-        balance: 1790.56,
+        balance: '1790.56',
         name: 'Suzette Lewis',
         gender: 'female',
         phone: '+1 (837) 586-3283',
@@ -56,13 +56,13 @@ const users = [
     },
 ];
 
-const result = users.filter(item => item.balance > 2000)
+const result = users.filter(item => Number(item.balance) > 2000)
     .map(item => {
         return `${item.phone} (${item.balance})`
     });
 console.log(result)
 
 const totalBalance = users.reduce((acc, person, index, arr) => {
-    return acc + person.balance;
+    return acc + Number(person.balance);
 }, 0);
 console.log(totalBalance)
