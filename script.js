@@ -13,6 +13,7 @@ function removeElement(numbers, elem) {
         numbers.splice(index, 1);
     }
 }
+removeElement(numbers, 5)
 console.log(numbers);
 
 // Version 2
@@ -27,7 +28,10 @@ const n = fruits.splice(2, 1);
 function removeElement(fruits, n) {
     const index1 = fruits.indexOf(n);
     if (index1 > -1) {
-        fruits.splice(index1, 1);
+        fruits.splice(2, 1);
     }
 }
+removeElement(fruits, 'pear')
 console.log(fruits);
+
+
