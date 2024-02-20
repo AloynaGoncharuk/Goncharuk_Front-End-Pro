@@ -5,7 +5,7 @@ class Person {
         this.age = age;
     }
     get personInfo() {
-        console.log(`Person: ${this.name},(${this.age})`)
+        console.log(`Person: ${this.name}, ${this.age}`)
     }
 }
 
