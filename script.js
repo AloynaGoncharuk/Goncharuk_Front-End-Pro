@@ -57,4 +57,15 @@ class Student {
             console.log(this.results.GOOD);
     }
 }
+const molly = new Student('Molly', 'Robertson', '01/20/1993', [90, 60, 90]);
+const nikolas = new Student('Nikolas', 'Caidge', '03/28/1986', [90, 80, 90]);
+console.log(molly);
+console.log(nikolas);
 
+molly.present();
+molly.absent();
+molly.summary();
+
+nikolas.present();
+nikolas.absent();
+nikolas.summary();
