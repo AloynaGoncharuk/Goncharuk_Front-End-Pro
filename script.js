@@ -56,7 +56,6 @@ let users = [
     }
 ];
 
-
 const result = users.filter(item => Number(item.balance) > 2000)
     .map(item => {
         return `${item.phone} (${item.balance})`
@@ -67,4 +66,15 @@ const totalBalance = users.reduce((acc, person, index, arr) => {
     return acc + Number(person.balance);
 }, 0);
 console.log(totalBalance)
+
+// const result = users.filter(item => Number(item.balance) > 2000)
+//     .map(item => {
+//         return `${item.phone} (${item.balance})`
+//     });
+// console.log(result);
+
+// const totalBalance = users.reduce((acc, person, index, arr) => {
+//     return acc + Number(person.balance);
+// }, 0);
+// console.log(totalBalance)
 
