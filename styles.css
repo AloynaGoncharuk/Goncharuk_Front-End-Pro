@@ -1,0 +1,10 @@
+#myTextField {
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#error {
+  display: none;
+  border: 2px solid red;
+  padding: 10px;
+}
