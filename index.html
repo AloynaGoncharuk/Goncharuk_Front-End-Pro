@@ -4,13 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homework</title>
+    <title>Homework27 Registration form</title>
+    <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
 </head>
 
 <body>
     <header></header>
-    <main></main>
+    <main>
+        <section>
+            <div class="container">
+                <form action=" #" method="post">
+                    <div class="content">
+                        <h1 class=" h1">Реєстрація</h1>
+                        <label for="name">Ім’я</label>
+                        <input class="person" id="name" name="name" placeholder="Введіть ім’я" required
+                            autocomplete="off">
+                        <label for="name">Прізвище</label>
+                        <input class="person" id="surname" name="surname" placeholder="Введіть прізвище" required
+                            autocomplete="off">
+
+                        <label for="name">Дата народження</label>
+                        <input class="person" id="birth" name="birth" placeholder="Введіть дату народження" required
+                            autocomplete="off">
+
+                        <label for="gender" class="gender">Стать:</label><br>
+                        <input type="radio" name="gender" id="gender">чол<br>
+                        <input type="radio" name="gender" id="gender1">жін <br>
+
+                        <label for="lang">Мови, якими володієте:</label><br>
+                        <input type="checkbox" name="lang" id="uk">Українська<br>
+                        <input type="checkbox" name="lang" id="eng">Англійська<br>
+                        <input type="checkbox" name="lang" id="ger">Німецька<br>
+                        <input type="checkbox" name="lang" id="other">Інше<br>
+
+                        <label for="city">Місто:</label><br>
+                        <select class="city" name="city" id="city">
+                            <option value="city">Виберіть місто</option>
+                            <option value="city">Київ</option>
+                            <option value="city">Харків</option>
+                            <option value="city">Одеса</option>
+                            <option value="city">Львів</option>
+                            <option value="city">Дніпро</option>
+                            <option value="city">Полтава</option>
+                        </select><br>
+
+                        <label for="adress">Адреса:</label><br>
+                        <textarea class="adress" name="adress" id="adress" placeholder="Aдреса" rows="3"></textarea>
+
+                        <button type="submit" class="submit">Зберегти</button>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </main>
     <footer></footer>
 </body>
 
