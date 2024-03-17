@@ -1,8 +1,8 @@
 
 const arr = [1, 2, [3, 4, 5], 6, 7, [8, 9, 6], 8]
 function generateList(items) {
-    const ul = document.createElement('ul');
-    items.forEach(item => {
+    const ul = document.getElementById('ul');
+    items.forEach = (item => {
         const li = document.createElement('li');
         if (!Array.isArray(item)) {
             li.innerText = item;
