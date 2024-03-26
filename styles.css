@@ -87,31 +87,6 @@ input [type="radio"],
 .adress:focus {
   outline-color: red;
 }
-/* input [type="submit"] {
-  width: 100%;
-  padding: 10px;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  border: 1px solid;
-  background-color: aliceblue;
-  text-transform: uppercase;
-} */
-/* input [type="submit"]:focus {
-  outline-color: red;
-} */
-/* .submit:focus {
-  outline-color: red;
-} */
-/* #table {
-  width: 30%;
-  height: 100px;
-  margin-top: 20px;
-}
-td {
-  padding: 5px;
-} */
 table {
   display: none;
 }
@@ -120,22 +95,3 @@ th {
   border: 1px solid;
   text-align: center;
 }
-
-/* #info {
-  width: 30%;
-  height: 300px;
-  border: 1px solid;
-  display: none;
-} */
-/* ul {
-  list-style: none;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  justify-content: center;
-  width: 25vw;
-  height: 300px;
-}
-ul li {
-  padding: 1em 2em 0.8em 2em;
-  border: 1px solid black;
-} */
