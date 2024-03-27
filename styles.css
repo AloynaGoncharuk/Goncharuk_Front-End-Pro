@@ -87,10 +87,11 @@ input [type="radio"],
 .adress:focus {
   outline-color: red;
 }
-table {
+.list {
   display: none;
+  margin-top: 10px;
 }
-th {
+td {
   padding: 5px 15px;
   border: 1px solid;
   text-align: center;

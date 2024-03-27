@@ -34,19 +34,19 @@
                         </div>
                         <div>
                             <label for="gender" class="gender">Стать:</label><br>
-                            <input type="radio" name="gender" id="gender">чол<br>
-                            <input type="radio" name="gender" id="gender1">жін <br>
+                            <input type="radio" name="gender" value="чол">чол<br>
+                            <input type="radio" name="gender" value="жін">жін <br>
                         </div>
                         <div>
                             <label for="city">Місто:</label><br>
                             <select class="city" name="city" id="city">
                                 <option value="city">Виберіть місто</option>
-                                <option value="city">Київ</option>
-                                <option value="city">Харків</option>
-                                <option value="city">Одеса</option>
-                                <option value="city">Львів</option>
-                                <option value="city">Дніпро</option>
-                                <option value="city">Полтава</option>
+                                <option value="Київ">Київ</option>
+                                <option value="Харків">Харків</option>
+                                <option value="Одеса">Одеса</option>
+                                <option value="Львів">Львів</option>
+                                <option value="Дніпро">Дніпро</option>
+                                <option value="Полтава">Полтава</option>
                             </select><br>
                         </div>
                         <div>
@@ -55,33 +55,53 @@
                         </div>
                         <div>
                             <h4>Мови, якими володієте:</h4>
-                            <input type="checkbox" name="lang" id="uk">
+                            <input type="checkbox" name="lang" value="UK">
                             <label for="uk">Українська</label><br>
-                            <input type="checkbox" name="lang" id="eng">
+                            <input type="checkbox" name="lang" value="EN">
                             <label for="eng">Англійська</label><br>
-                            <input type="checkbox" name="lang" id="ger">
+                            <input type="checkbox" name="lang" value="GER">
                             <label for="ger">Німецька</label><br>
-                            <input type="checkbox" name="lang" id="other">
+                            <input type="checkbox" name="lang" value="Other">
                             <label for="other">Інше</label>
                         </div>
                         <div>
                             <input type="submit" id="submit" value="Зберегти">
                         </div>
                     </div>
-
                 </form>
 
-                <table class="list" id="employeeList">
-                    <tr>
-                        <th>Name</th>
-                        <th>Surname</th>
-                        <th>Birth</th>
-                        <th>Gender</th>
-                        <th>City</th>
-                        <th>Adress</th>
-                        <th>Language</th>
-                    </tr>
-                </table>
+                <div class="list">
+                    <table border="1">
+                        <tr>
+                            <td>Name:</td>
+                            <td><span id="showName"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Surname:</td>
+                            <td><span id="showSurname"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Birth:</td>
+                            <td><span id="showBirth"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Gender:</td>
+                            <td><span id="showGender"></span></td>
+                        </tr>
+                        <tr>
+                            <td>City:</td>
+                            <td><span id="showCity"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Adress:</td>
+                            <td><span id="showAdress"></span></td>
+                        </tr>
+                        <tr>
+                            <td>Language:</td>
+                            <td><span id="showLanguage"></span></td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
     </main>
