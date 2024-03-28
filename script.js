@@ -1,5 +1,6 @@
 
-document.getElementById('submit').addEventListener('click', () => {
+document.getElementById('submit').addEventListener('click', (e) => {
+    e.preventDefault();
     document.querySelector(".list").style.display = "block";
     document.getElementById("form").style.display = "none";
     let name = document.getElementById('name').value;
